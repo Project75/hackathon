@@ -1,0 +1,39 @@
+26jan hp_v004
+added 150/50 no crash images -- will it impact efficiency ?
+also using batch size =32 now, earlier it was not called in ImageDataBunch
+epoch	train_loss	valid_loss	accuracy
+1	1.150085	0.809587	0.655629
+2	0.786974	0.666013	0.761589
+3	0.627997	0.729873	0.774834
+4	0.535454	0.694319	0.754967
+5	0.439716	0.684056	0.754967
+6	0.399404	0.668448	0.754967
+
+next -> try with densenet
+
+good reads - 
+https://medium.com/@14prakash/transfer-learning-using-keras-d804b2e04ef8
+https://medium.com/@YassineAlouini/lessons-learned-from-kaggles-airbus-challenge-252e25c5efac
+https://medium.com/@nachiket.tanksale/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6
+https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f
+
+
+
+
+25 jan  
+notebook - fastai_v003
+model - resnet18
+car crash and flood 150/50 images in train/valid
+running 1cycle policy
+
+accuracy flattens after 5 epochs
+
+
+Total time: 14:29
+epoch	train_loss	valid_loss	accuracy
+1	0.790963	0.623314	0.673267
+2	0.548495	0.680412	0.772277
+3	0.409454	0.676612	0.801980
+4	0.322595	0.683606	0.811881
+5	0.271388	0.689988	0.831683
+6	0.236685	0.697664	0.831683
